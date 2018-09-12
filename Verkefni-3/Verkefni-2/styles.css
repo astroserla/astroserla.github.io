@@ -1,0 +1,21 @@
+border: 3px dashed green
+padding: 1em;
+margin-top 1em
+)
+Inline li (
+  display: inline;
+  border: 3px dashed blue 
+  colo: red
+)
+inlineBlock li (
+    display: inline-Block;
+    border: 3px dashed red; 
+    color: red 
+)
+.row div (
+    float: left;
+)
+.box-1-3 (
+    width: 33.33%
+    border: 1xp solid;
+    padding: 1em;
