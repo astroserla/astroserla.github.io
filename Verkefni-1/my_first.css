@@ -1,5 +1,9 @@
-.russ{
-    margin: 50em;
+body{
+    font-family: sans-serif;
+    max-width: 50em;
+    border: 2px solid green;
+    padding: 2em;
+    margin: 2em auto;
 }
 .bucky{
     color: blue;
@@ -54,15 +58,6 @@
     color: green;
     text-align: center;
 }
-.hel{
-    color: orangered;
-}
-.narfi{
-    color: darkgreen;
-}
-.sleipnir{
-    color: orange;
-}
 .bla{
     text-align: center;
 }
@@ -71,5 +66,34 @@
 }
 .two3{
     text-align: center
+}
+.james{
+    color: darkred;
+    text-align: center;
+}
+a:link{
+    color: navy;
+}
+a:visited{
+    color: navy
+}
+a:hover,
+a:active{
+    color:darkgreen;
+}
+.tony{
+    color: darkred;
+}
+.spoopy{
+    color: orangered;
+}
+.spoopytwo{
+    color: darkred;
+}
+.spoopythree{
+    color: darkred;
+}
+.spoopyfour{
+    color: orangered;
 }
 
