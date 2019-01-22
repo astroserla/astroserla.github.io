@@ -1,0 +1,36 @@
+h1{
+    border: 2px solid darkred;
+}
+.box{
+    border: 3px solid navy;
+    padding: 2em;
+    color: darkred;
+}
+.box2{
+    margin-top: 2em;
+}
+.box2 h1{
+    border: 3px dashed navy;
+    padding: 2em;
+    color: darkgreen;
+}
+.blokk li{
+    border: 2px dashed red;
+    padding:1em;
+    margin-bottom: 1em;
+    color: navy;
+}
+.inline li{
+    display: inline;
+    border: 2px dashed red;
+    padding:1em;
+    margin-bottom: 1em;
+    color: navy;
+}
+.inlineblokk li{
+    display: inline-block;
+    border: 2px dashed blue;
+    padding:1em;
+    margin: 1em;
+    color: red;
+}
