@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    max-width: 50em;
+    margin: 1em auto;
+}
+.box{
+    width: 50%;
+    float: left;
+    border: 1px solid;
+    padding: 1em;
+}
+.bigl{
+    float: left;
+    font-size: 4em;
+    padding: 0 .3em;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.imgR{
+    float: right;
+    width: 40%;
+}
