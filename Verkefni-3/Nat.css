@@ -6,16 +6,19 @@ body{
     max-width:50em;
     padding: 2em;
     margin:  2em auto;
-    background-color: whitesmoke;
+    background-color: lightskyblue;
 }
 /* grid-area */
 header{
     grid-area: header;
     text-align: center;
-    color: purple;
+    color: lightcoral;
 }
 .topnav{
     grid-area: topnav;
+}
+.topmenu{
+    grid-area: topmenu;
 }
 .content{
     grid-area: content;
@@ -24,6 +27,10 @@ footer{
     grid-area: footer;
 }
 /* content */
+
+.natyo{
+    border: 2px rebeccapurple;
+}
 .art{
     grid-area: article;
     color: purple;
@@ -45,7 +52,7 @@ body{
     "header"
     "content"
     "footer";
-    max-width:60em;
+    max-width:70em;
     margin: 0 auto;
 }
 .content{
@@ -59,5 +66,10 @@ body{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    list-style-type: none;
+    border: 8px solid cornflowerblue;
+    list-style-type: initial;
+    padding: 1em;
+}
+.topmenu, li{
+    padding: 1em solid black;
 }
