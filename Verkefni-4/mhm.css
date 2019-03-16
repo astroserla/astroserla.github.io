@@ -1,0 +1,164 @@
+body{
+    font-family: 'Playfair Display', serif;
+    max-width: 90;
+}
+.container1{
+    display: grid;
+    grid-area: header;
+    text-align: left;
+    background-color: brown;
+}
+.beigebg{
+    text-align: center;
+}
+.top{
+    color: black;
+}
+.top2{
+    display: grid;
+    grid-area: header;
+    text-align: center;
+}
+.top3{
+    display: grid;
+    grid-area: header;
+    text-align: right;
+}
+.container2{
+    display: grid;
+    grid-area: content;
+    background-color: burlywood;
+}
+.low{
+    display: grid;
+    grid-area: footer;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+h1{
+    text-align: center;
+}
+#læknis{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    list-style-type: square type t;
+    padding: 2em solid brown;
+    padding: 3em;
+    text-align: center;
+}
+.læknir1{
+    display: grid;
+    grid-area: auto;
+    text-align: center;
+}
+.læknir2{
+    display: grid;
+    grid-area: auto;
+}
+#óskirnar{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    list-style-type: square type t;
+    padding: 2em solid brown;
+    padding: 3em;
+    text-align: center;
+}
+.ó1{
+    display: grid;
+    grid-area: auto;
+    text-align: center;
+}
+.ó2{
+    display: grid;
+    grid-area: auto;
+}
+#Adam{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    list-style-type: square type t;
+    padding: 2em solid brown;
+    padding: 3em;
+    text-align: center;
+}
+.a1{
+    display: grid;
+    grid-area: auto;
+    text-align: center;
+}
+.a2{
+    display: grid;
+    grid-area: auto;
+}
+#Alnæmisfaraldurinn{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    list-style-type: square type t;
+    padding: 2em solid brown;
+    padding: 3em;
+    text-align: center;
+}
+.f1{
+    display: grid;
+    grid-area: auto;
+    text-align: center;
+}
+.f2{
+    display: grid;
+    grid-area: auto;
+}
+#jólakveðja{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    list-style-type: square type t;
+    padding: 2em solid brown;
+    padding: 3em;
+    text-align: center;
+}
+.j1{
+    display: grid;
+    grid-area: auto;
+    text-align: center;
+}
+.j2{
+    display: grid;
+    grid-area: auto;
+}
+#Gef{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    list-style-type: square type t;
+    padding: 2em solid brown;
+    padding: 3em;
+    text-align: center;
+}
+.g1{
+    display: grid;
+    grid-area: auto;
+    text-align: center;
+}
+.g2{
+    display: gird;
+    grid-area: auto;
+}
+.top3,.low{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 1em;
+}
+a:link{
+    color:red;
+}
+a:visited{
+    color:black;
+}
+a:hover,
+a:active{
+    color:whitesmoke;
+}

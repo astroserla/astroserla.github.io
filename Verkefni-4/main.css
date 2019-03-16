@@ -1,0 +1,52 @@
+body{
+    font-family: 'Playfair Display', serif;
+    max-width: 80em;
+}
+.bla{
+    display: grid;
+    grid-area: header;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+    color: black;
+    background-color: brown;
+}
+.top{
+    display: grid;
+    grid-area: top;
+    text-align: right;
+    color: black;
+}
+.top2{
+    display: grid;
+    grid-area: top2;
+    text-align: right;
+    color: black;
+}
+.stuff{
+    display: grid;
+    grid-area: stuff;
+}
+.art{
+    display: grid;
+    grid-area: artical;
+    text-align: center;
+    background-color: bisque;
+    color: black;
+}
+.blockyou{
+    color: brown;
+}
+.low{
+    display: grid;
+    grid-area: footer;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: brown;
+    color: black;
+}
+.top2,footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 3em;
+}
