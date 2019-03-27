@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(lightblue, lightgreen)
+}
+.topnav{
+    list-style-type: none;
+    font-family: 'Luckiest Guy', cursive;
+    text-align: right;
+}
+/*grid-area*/
+header{
+    grid-area: header;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+}
+.topnav{
+    grid-area: topnav;
+}
+.footer{
+    grid-area: footer;
+}
+/*content*/
+.art{
+    grid-area: artical;
+    text-align: center;
+}
+.music{
+    font-family: 'Bangers', cursive;
+    font-size: 1.5em;
+    font-weight: 40;
+}
+.Marvel{
+    font-family: 'Bangers', cursive;
+    font-size: 1.5em;
+    font-weight: 40
+}
+/*grid-template-area*/
+body{
+    display: grid;
+    grid-gap: 0em;
+    grid-template-areas: 
+        "header"
+        "topnav"
+        "artical"
+        "footer";
+    max-width: 70em;
+}
+.low{
+    display: grid;
+    grid-area: footer;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.photo1{
+    display: flex;
+    flex-wrap: wrap-around;
+    padding: 0.5px;
+
+}
+.P2{
+    display: grid;
+    grid-area: artical;
+    border: 2em solid lightblue;
+}
