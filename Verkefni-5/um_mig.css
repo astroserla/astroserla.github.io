@@ -56,10 +56,9 @@ body{
     display: flex;
     flex-wrap: wrap-around;
     padding: 0.5px;
-
 }
-.P2{
+.germen{
     display: grid;
-    grid-area: artical;
-    border: 2em solid lightblue;
+    grid-area: footer;
+    grid-template-columns: 1fr 1fr;
 }
