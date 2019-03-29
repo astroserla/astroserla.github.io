@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(lightblue, lightgreen)
+    background: linear-gradient(crimson,black);
+    color: whitesmoke;
 }
 .topnav{
     list-style-type: none;
@@ -11,6 +12,7 @@ body{
 }
 /*grid-area*/
 header{
+    display: grid;
     grid-area: header;
     text-align: center;
     font-family: 'Luckiest Guy', cursive;
@@ -25,16 +27,9 @@ header{
 .art{
     grid-area: artical;
     text-align: center;
-}
-.music{
-    font-family: 'Bangers', cursive;
-    font-size: 1.5em;
-    font-weight: 40;
-}
-.Marvel{
-    font-family: 'Bangers', cursive;
-    font-size: 1.5em;
-    font-weight: 40
+    font-style: oblique;
+    font-kerning: initial;
+    font-synthesis: style;
 }
 /*grid-template-area*/
 body{
@@ -48,17 +43,17 @@ body{
     max-width: 70em;
 }
 .low{
+    list-style-type: lower-greek;
     display: grid;
     grid-area: footer;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.photo1{
-    display: flex;
-    flex-wrap: wrap-around;
-    padding: 0.5px;
+    grid-template-columns: 15fr 4fr
 }
 .germen{
     display: grid;
     grid-area: footer;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 15fr 4fr;
+}
+.col-1{
+    float: right;
+    width: 40%;
 }

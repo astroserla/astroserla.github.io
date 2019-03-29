@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "topnav"
+        "artical"
+        "footer";
+    background: linear-gradient(crimson, navy);
+    color: white;
+
+}
+.topnav{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0.1em;
+}
+header{
+    display: grid;
+    grid-area: header;
+    text-align: center; 
+}
+.topnav{
+    grid-area: topnav;
+}
+footer{
+    grid-area: footer;
+}
+.art{
+    list-style-type: none;
+    text-align: left;
+}
+img{
+    float: right;
+    width: 40%;
+}
+.img2{
+    float: left;
+    width: 40%;
+}
+.hmm{
+    text-align: left;
+    list-style-type: lower-greek;
+}
+.art{
+    text-align: right;
+}
+.center101{
+    text-align: center;
+    list-style-type: lower-greek;
+}
+a:link{
+    color: lightcyan;
+}
+a:visited{
+    color:lightskyblue;
+}
+a:hover,
+a:active{
+    color: paleturquoise;
+}
