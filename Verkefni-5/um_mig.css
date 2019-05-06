@@ -2,13 +2,24 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(crimson,black);
+    background: linear-gradient(brown,black);
     color: whitesmoke;
 }
 .topnav{
-    list-style-type: none;
-    font-family: 'Luckiest Guy', cursive;
-    text-align: right;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+}
+.topnav li{
+    border: 0;
+    border-bottom: 1px; 
+    margin:0;
+    text-decoration: none;
+    text-align: center;
+    padding: 4em 1em; 
 }
 /*grid-area*/
 header{
@@ -20,11 +31,19 @@ header{
 .topnav{
     grid-area: topnav;
 }
-.footer{
+footer{
     grid-area: footer;
+}
+.content{
+    display: grid;
+    grid-area: content;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "artical";
 }
 /*content*/
 .art{
+    display: grid;
     grid-area: artical;
     text-align: center;
     font-style: oblique;
@@ -54,6 +73,52 @@ body{
     grid-template-columns: 15fr 4fr;
 }
 .col-1{
-    float: right;
+    display: grid;
+    grid-area: col-1;
+    float: center;
     width: 40%;
+}
+
+@media(max-width: 43em){
+
+    .jfk{
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-areas: 
+        "header"
+        "topnav"
+        "artical"
+        "footer";
+    }
+    .col-1{
+        float: center;
+        width: 300px;
+        height: 260px;
+    }
+    .content{
+        display: grid;
+        grid-area: content;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "artical";
+    }
+}
+/* MOBILE */
+@media(max-width: 18.75em){
+    .jfk{
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-areas: 
+        "header"
+        "topnav"
+        "artical"
+        "footer";
+    }
+    .content{
+        display: grid;
+        grid-area: content;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "artical";
+    }
 }
