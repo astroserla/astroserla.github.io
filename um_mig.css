@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(brown,black);
+    color: whitesmoke;
+}
+.topnav{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+}
+.topnav li{
+    border: 0;
+    border-bottom: 1px; 
+    margin:0;
+    text-decoration: none;
+    text-align: center;
+    padding: 4em 1em; 
+}
+/*grid-area*/
+header{
+    display: grid;
+    grid-area: header;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+}
+.topnav{
+    grid-area: topnav;
+}
+footer{
+    grid-area: footer;
+}
+.content{
+    display: grid;
+    grid-area: content;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "artical";
+}
+/*content*/
+.art{
+    display: grid;
+    grid-area: artical;
+    text-align: center;
+    font-style: oblique;
+    font-kerning: initial;
+    font-synthesis: style;
+}
+/*grid-template-area*/
+body{
+    display: grid;
+    grid-gap: 0em;
+    grid-template-areas: 
+        "header"
+        "topnav"
+        "artical"
+        "footer";
+    max-width: 70em;
+}
+.low{
+    list-style-type: lower-greek;
+    display: grid;
+    grid-area: footer;
+    grid-template-columns: 15fr 4fr
+}
+.germen{
+    display: grid;
+    grid-area: footer;
+    grid-template-columns: 15fr 4fr;
+}
+.col-1{
+    display: grid;
+    grid-area: col-1;
+    float: center;
+    width: 40%;
+}
+
+@media(max-width: 43em){
+
+    .jfk{
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-areas: 
+        "header"
+        "topnav"
+        "artical"
+        "footer";
+    }
+    .col-1{
+        float: center;
+        width: 300px;
+        height: 260px;
+    }
+    .content{
+        display: grid;
+        grid-area: content;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "artical";
+    }
+}
+/* MOBILE */
+@media(max-width: 18.75em){
+    .jfk{
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-areas: 
+        "header"
+        "topnav"
+        "artical"
+        "footer";
+    }
+    .content{
+        display: grid;
+        grid-area: content;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "artical";
+    }
+}
