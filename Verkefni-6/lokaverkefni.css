@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    color: whitesmoke;
+    margin: 0em;
+    padding: 1em;
+}
+.thehead{
+    display: grid;
+    grid-area: header;
+    grid-template-columns: 1fr 0.2fr;
+    text-align: right;
+    font-size: 2em;
+}
+.art{
+    display: grid;
+    grid-area: artical;
+    text-align: center;
+    font-style: oblique;
+    font-kerning: initial;
+    font-synthesis: style;
+    font-size: 1em;
+}
+.art2{
+    display: grid;
+    grid-area: artical;
+    text-align: center;
+    font-style: oblique;
+    font-kerning: initial;
+    font-synthesis: bold; 
+    font-size: 1em; 
+}
+.oof{
+    font-size: 1.5em
+}
+footer{
+    display: grid;
+    grid-area: footer;
+    grid-template-columns: 4fr 2fr 2fr;
+    padding: 5em;
+    margin: 2em;
+}
